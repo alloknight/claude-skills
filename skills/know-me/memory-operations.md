@@ -3,8 +3,8 @@
 ## Memory Architecture
 
 ```
-~/.claude/projects/<project-path>/memory/
-├── MEMORY.md              ← Auto-loaded (first 200 lines). Index + key facts.
+~/.claude/projects/<project-path>/know-me/
+├── MEMORY.md              ← Read at session start (first 200 lines). Index + key facts.
 ├── user-preferences.md    ← Dev tools, code style, framework choices
 ├── project-context.md     ← What they're building, business context
 ├── tech-stack.md          ← Languages, frameworks, versions, infrastructure
@@ -13,7 +13,7 @@
 ```
 
 ### MEMORY.md Rules
-- First 200 lines are auto-loaded into every conversation
+- Not auto-loaded: read it yourself at the start of a session (first 200 lines)
 - Keep it as an index: short summaries + pointers to topic files
 - Don't put detailed info here — put it in topic files
 - Budget: ~20 lines per section, max 6-8 sections
@@ -114,7 +114,7 @@
 
 ### Before Starting Any Task
 Quick mental checklist:
-1. MEMORY.md is auto-loaded — scan it for relevant preferences
+1. Read `~/.claude/projects/<project-path>/know-me/MEMORY.md` — scan it for relevant preferences
 2. If task involves code: Do I know their style preferences?
 3. If task involves architecture: Do I know their stack and constraints?
 4. If task involves communication: Do I know their preferred style?

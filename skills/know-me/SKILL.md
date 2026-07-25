@@ -29,8 +29,8 @@ Watch for signals the user is revealing something worth remembering:
 
 ### 2. Save (To Memory Topic Files)
 ```
-~/.claude/projects/<project-path>/memory/
-├── MEMORY.md              ← Summary + links (auto-loaded, 200-line limit)
+~/.claude/projects/<project-path>/know-me/
+├── MEMORY.md              ← Summary + links (read this first, 200-line limit)
 ├── user-preferences.md    ← How the user likes to work
 ├── project-context.md     ← What they're building and why
 ├── tech-stack.md          ← Tools, frameworks, versions they use
