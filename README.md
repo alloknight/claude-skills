@@ -2,6 +2,21 @@
 
 A repository of custom workflows, agents, and prompts.
 
+## Install
+
+```bash
+./install.sh              # symlink every skill into ~/.claude/skills
+./install.sh --dry-run    # preview changes
+./install.sh --uninstall  # remove only the links pointing into this repo
+```
+
+Skills are symlinked rather than copied, so this repo stays the single source of
+truth — a `git pull` or a local edit takes effect immediately, with no reinstall.
+The script is idempotent, refuses to clobber a real directory in
+`~/.claude/skills`, and prunes links whose source has been removed. Multi-skill
+bundles like `superpowers` are expanded so each of their skills is linked
+individually. Restart Claude Code or start a new session to pick up changes.
+
 ## Skills Inventory
 <!-- CLAUDE: ADD NEW SKILLS DIRECTLY BELOW THIS LINE -->
 
